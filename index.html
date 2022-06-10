@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualiser</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+    <header>
+    <div class="navbar-container">
+        <h2 class="title" onclick="window.location.reload()">
+            Sorting Visualiser
+        </h2>
+        <div class="navbar">
+            <button class="random" onclick="RenderScreen()">Generate Array</button>
+            <span class="options">
+                <select name="Select Sorting Algorithm" id="list" class="algo-list">
+                    <option value="0">Choose Algorithm</option>
+                    <option value="1">Bubble Sort</option>
+                    <option value="2">Selection Sort</option>
+                    <option value="3">Insertion Sort</option>
+                    <option value="4">Merge Sort</option>
+                    <option value="5">Quick Sort</option>
+                </select>
+            </span>
+            <span class="array_size">
+                    <label for="size">Array Size:</label>
+                    <input type="range" id="size" class="size" name="size" min="5" max="100">
+            </span>
+           
+            <span class="speed">
+                <select name="Select the speed" id="list" class="size-list">
+                    <option value="0">Speed</option>
+                    <option value="1">0.25X</option>
+                    <option value="2">0.5X</option>
+                    <option value="3">1X</option>
+                    <option value="4">1.25X</option>
+                    <option value="5">1.5X</option>
+                    <option value="6">2X</option>
+
+                </select>
+            </span>
+
+            <button class="start" onclick="sortFunction()">Sort</button>
+            <button onclick="myFunction()">Toggle dark mode</button>  
+        </div>
+         <br>  
+        </div>        
+    </header>  
+<body class="dark_mode">
+        <div class="bars">
+            <!-- <div class="bars"></div> -->
+        </div>
+      
+    <br>
+
+    <div class="descr">
+     <hr>
+     <div class="desc">
+         <h2>About Algorithm</h2>
+         <p>ihdfiehuisu fys iuhsynro8ui vsdyt8oriuavayug</p>
+     </div>
+     <div class="time">
+         <h2>Time Complexity</h2>
+     </div>
+                
+    </div>
+        
+         
+
+    <script src="./scripts/app.js"></script>
+    <script src="./scripts/bubblesort.js"></script>
+    <script src="./scripts/insertionsort.js"></script>
+    <script src="./scripts/selectionsort.js"></script>
+    
+</body>
+</html>
