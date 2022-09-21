@@ -1,5 +1,20 @@
 async function selectionSort() {
     const elem = document.querySelectorAll(".bar");
+    const about = document.querySelector(".about");
+    const best_time = document.querySelector(".time_best");
+    const worst_time = document.querySelector(".time_worst");
+    const space = document.querySelector(".space");
+
+    best_time.textContent = "Best Case = O(n)"
+    worst_time.textContent = "Worst Case = O(n^2)"
+    space.textContent = "Space Complexity = O(1)"
+
+
+    about.textContent = "The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order) from the unsorted part and putting it at the beginning."+ 
+                      "The algorithm maintains two subarrays in a given array."+
+                      "The subarray which already sorted. "+
+                      "The remaining subarray was unsorted."+
+                      "In every iteration of the selection sort, the minimum element (considering ascending order) from the unsorted subarray is picked and moved to the sorted subarray."
 
     for (let i = 0; i < elem.length; i++) {
         let min_index = i;

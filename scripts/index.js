@@ -15,5 +15,11 @@ const sort = async () => {
         case 3:
             insertionSortFunction();
             break;
+        case 4:
+            mergeSortFunction();
+            break;
+        case 5:
+            quickSortFunction();
+            break;    
     }
 }

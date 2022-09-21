@@ -1,5 +1,19 @@
 async function insertionSort() {
     const elem = document.querySelectorAll(".bar");
+    
+    const about = document.querySelector(".about");
+    const best_time = document.querySelector(".time_best");
+    const worst_time = document.querySelector(".time_worst");
+    const space = document.querySelector(".space");
+
+    best_time.textContent = "Best Case = O(n)"
+    worst_time.textContent = "Worst Case = O(n^2)"
+    space.textContent = "Space Complexity = O(1)"
+    about.innerHTML = "Insertion sort is a simple sorting algorithm that works similar to the way you sort playing cards in your hands."+
+                      "The array is virtually split into a sorted and an unsorted part."+
+                      "Values from the unsorted part are picked and placed at the correct position in the sorted part."
+
+
     elem[0].style.background = 'green';
 
     for (let i = 1; i < elem.length; i++) {
